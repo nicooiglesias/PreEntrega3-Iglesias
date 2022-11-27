@@ -1,0 +1,48 @@
+
+//Variables
+$color-background-navbar: #4b134f;
+
+$color-titulo-index: chartreuse;
+
+$color-letra: #000000;
+
+$estilo-letra: 'Roboto', sans-serif;
+
+$estilo-parrafo: 'Nunito', sans-serif;
+
+$color_1: #f0f0f0;
+
+$margen: 40px;
+
+$margenIndex: 50px;
+
+$tamanoF: 20px;
+
+//mixin
+@mixin tamanos($ancho,$alto) {
+    width: $ancho;
+    height: $alto;
+}
+
+@mixin tamanosLetra($grosorletra,$tamanofuente){
+    font-weight: $grosorletra;
+    font-size: $tamanofuente;
+
+}
+
+
+//extends
+%parrafo {
+    font-family: $estilo-letra;
+    color: $color-letra;
+    margin-top: 30px;
+
+}
+
+%parrafoNosotros {
+    font-family: $estilo-parrafo;
+    color: $color-letra;
+    margin-top: 30px;
+    margin: 20px;
+    align-items: flex-end;
+}

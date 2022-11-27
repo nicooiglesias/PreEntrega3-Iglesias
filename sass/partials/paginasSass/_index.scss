@@ -1,0 +1,77 @@
+@use '../general/variables' as index;
+
+
+/* Pagina index */
+.tituloIndex{
+    text-align: center;
+    font-size: index.$tamanoF*2;
+    padding: 70px;
+    font-family: index.$estilo-letra;
+    h2{
+        margin-top: index.$margen*2;
+        margin-bottom: 100px;
+        font-family: index.$estilo-letra;
+    }
+    #softwaretext {
+        font-family: index.$estilo-letra;
+        color: chartreuse;
+    }
+}
+
+.contenedor {
+    @include index.tamanos(100%, 300px);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 90px;
+    .tabla{
+        display: inherit;
+        flex-direction: column;
+        @include index.tamanos(310px, 300px);
+        margin: 5px;
+        border: 1px solid #343759;
+        border-radius: 4px;
+        box-shadow: 0px 0px 4px 0px #343759;
+        padding: 60px;
+        text-align: center;
+        color: #000000;
+        background-color: yellow;
+        h2{
+            font-family: index.$estilo-letra;
+            font-size: 24px;
+            margin-bottom: 35px;
+        }
+        p{
+            font-family: index.$estilo-letra;
+            display: block;
+            margin-bottom: 20px;
+        }
+        img{
+            width: 64px;
+            margin-bottom: 35px;
+            margin: auto;
+        }
+        .boton {
+            width: 150px;
+            padding: 12px;
+            background: #a5f059;
+            text-decoration: none;
+            color: #343759;
+            border-radius: 100px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 600;
+            margin: auto;
+            font-family: index.$estilo-letra;
+        }
+        &:hover{
+            background: #ffffff;
+            color: #000000;
+            transition: 0.5s all;
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+    }
+}

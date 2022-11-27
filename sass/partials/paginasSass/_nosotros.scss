@@ -1,0 +1,55 @@
+@use '../general/variables' as nosotros;
+
+/*Nosotros*/
+
+.textoNosotros{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color:nosotros.$color-letra; 
+    margin-top: nosotros.$margen*2;
+  }
+.textoParrafo{
+  display: flex;
+    flex-wrap: wrap;
+    color:nosotros.$color-letra; 
+    @include nosotros.tamanosLetra(20px,25px);  
+    margin-top: 40px;
+    overflow: hidden;
+    .parrafo{
+      @extend %parrafoNosotros;
+      display: inherit;
+      justify-content: flex-start;
+      align-items: flex-end;
+      margin: 10px;
+   }
+}
+  .testimonial-card {
+    .card-up {
+      height: 120px;
+      overflow: hidden;
+      border-top-left-radius: .25rem;
+      border-top-right-radius: .25rem;
+    }
+    .avatar{
+      width: 100px;
+      margin-top: -60px;
+      overflow: hidden;
+      border: 5px solid #fff;
+      border-radius: 50%;
+      .persona1{
+       @include nosotros.tamanos(100%,100%);
+        object-fit: cover;
+      }
+    }
+  }
+  
+  .aqua-gradient {
+    background: linear-gradient(40deg, #2096ff, #05ffa3) !important;
+  }
+
+  .cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }

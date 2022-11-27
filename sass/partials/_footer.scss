@@ -1,0 +1,60 @@
+@use './general/variables' as foo;
+
+/* Footer */
+$margen: 100px;
+footer{
+    width: 100%;
+    padding: 50px 0px;
+}
+
+    .containerFooter{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: auto;
+        margin-top: $margen*2;
+    }
+        .boxFooter{
+            display: flex;
+            flex-direction: column;
+            padding: 70px;
+            
+            .logo{
+                img{
+                    width: 100px;
+                }
+            }
+            h2{
+                font-family: foo.$estilo-letra; 
+                margin-bottom: 30px;
+                color: #000000;
+                font-weight: 200px;
+            }
+            a{
+                font-family: foo.$estilo-letra;
+                margin-top: 10px;
+                color: #000000;
+                font-weight: 600;
+                &:hover{
+                    opacity: 0.8;
+                }
+             
+            }
+        }
+    
+.boxCopyright{
+        max-width: 1200px;
+        margin: auto;
+        text-align: center;
+        padding: 0px 40px;
+        p{
+            font-family: foo.$estilo-letra;
+            margin-top: 20px;
+            color: #000000;  
+        }
+            hr{
+                border: none;
+                height: 1px;
+                background-color: #000000;
+            }
+    }

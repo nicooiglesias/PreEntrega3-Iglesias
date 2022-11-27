@@ -1,0 +1,95 @@
+@use '../general/variables' as contacto;
+
+/* Formulario contacto y registro*/
+
+
+
+
+.formularioRegistro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+    .formulario {
+        background-color: white;
+        width: 100%;
+        max-width: 400px;
+        border-radius: 8px;
+        padding: 20px 40px;
+        box-shadow: 0 70px 70px rgba(0, 0, 0, 0.2);
+        font-size: 10px;
+        .title {
+            font-size: 2em;
+            margin-bottom: 50px;
+          }
+          .inputContainer{
+            position: relative;
+            @include contacto.tamanos(90%, 45px);
+            margin-bottom: 17px;
+            .input {
+                position: absolute;
+                top: 8px;
+                left: 0px;
+                @include contacto.tamanos(100%, 100%);
+                border: 1px solid #dadce0;
+                border-radius: 7px;
+                font-size: 16px;
+                padding: 0 20px;
+                outline: none;
+                background: none;
+                z-index: 1;
+                &::placeholder {
+                    color: transparent;
+                  }
+                &:focus + .label {
+                    top: -8px;
+                    left: 3px;
+                    z-index: 10;
+                    @include contacto.tamanosLetra(20px,14px);
+                    color: purple;
+                  }
+                &:focus {
+                    margin-bottom: 20px;
+                    border: 2px solid purple;
+                  }
+                &:not(:placeholder-shown) + .label {
+                    top: -8px;
+                    left: 3px;
+                    z-index: 10;
+                    @include contacto.tamanosLetra(20px,14px);
+                  }
+              }
+              .label {
+                position: absolute;
+                top: 15px;
+                left: 15px;
+                padding: 0 4px;
+                background-color: white;
+                color: #9867c5;
+                font-size: 16px;
+                transition: 0.5s;
+                z-index: 0;
+              }
+          }
+          .submitBtn {
+            display: block;
+            margin-left: auto;
+            padding: 15px 30px;
+            border: none;
+            background-color: purple;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 30px;
+            &:hover {
+                background-color: #9867c5;
+                transform: translateY(-2px);
+              }
+          }
+        }
+    }
+  

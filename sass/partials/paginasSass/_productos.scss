@@ -1,0 +1,54 @@
+@use '../general/variables' as produ;
+
+/* Productos */
+.tituloProducto{
+    text-align: center;
+    font-size: 40px;
+    padding: 70px;
+    font-family: produ.$estilo-letra;
+}
+
+.containerImagen{
+    margin-top: 30px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+   
+    img{
+        width: 400px;
+        padding: 30px;
+        margin: 0 auto;
+    }
+    p{
+        @extend %parrafo;
+        @include produ.tamanosLetra(50px,20px);
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+.carousel-inner{
+    margin-top: 400px;
+    margin-bottom: 250px;
+}
+
+.divVideo{
+    width: 90%;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow-x: hidden;
+    .containerVideo{
+
+        iframe{
+            @include produ.tamanos(90%, 400px);
+            margin: 30px; 
+        }
+    }
+    .containerVideoP{
+        @extend %parrafo;
+        align-content: flex-start;
+        @include produ.tamanosLetra(100%, 18px);
+        overflow-x: hidden
+    }
+}

@@ -1,0 +1,22 @@
+    //Global
+@use './partials/general/global';
+
+    //variables
+@use './partials/general/variables';
+
+    //header
+@use './partials/header';
+
+    //footer
+@use './partials/footer';
+
+    //paginas
+@use './partials/paginasSass/index.scss';
+
+@use './partials/paginasSass/productos';
+
+@use './partials/paginasSass/nosotros';
+
+@use './partials/paginasSass/contacto';
+@use './partials/paginasSass/pc';
+

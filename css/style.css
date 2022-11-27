@@ -1,0 +1,460 @@
+* {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+body {
+  background: #c94b4b;
+  background: -webkit-linear-gradient(to left, #4b134f, #c94b4b);
+  background: linear-gradient(to left, #4b134f, #c94b4b);
+}
+
+.containerImagen p, .divVideo .containerVideoP {
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  margin-top: 30px;
+}
+
+.textoParrafo .parrafo {
+  font-family: "Nunito", sans-serif;
+  color: #000000;
+  margin-top: 30px;
+  margin: 20px;
+  align-items: flex-end;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #4b134f;
+}
+.navbar .container-fluid .navbar-brand {
+  color: #fff;
+}
+.navbar .container-fluid .nav-item {
+  color: white;
+}
+.navbar .container-fluid .nav-item .nav-link {
+  color: white;
+}
+.navbar .container-fluid .nav-item .nav-link:hover {
+  color: white;
+}
+.navbar .container-fluid .navbar-collapse {
+  flex-grow: 0;
+}
+.navbar .container-fluid .navbar-collapse .dropdown-menu {
+  background-color: #4b134f;
+}
+.navbar .container-fluid .navbar-collapse .dropdown-menu li .dropdown-item:hover {
+  background-color: #4b134f;
+}
+.navbar .container-fluid .navbar-collapse .dropdown-menu li a {
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  padding: 50px 0px;
+}
+
+.containerFooter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 200px;
+}
+
+.boxFooter {
+  display: flex;
+  flex-direction: column;
+  padding: 70px;
+}
+.boxFooter .logo img {
+  width: 100px;
+}
+.boxFooter h2 {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 30px;
+  color: #000000;
+  font-weight: 200px;
+}
+.boxFooter a {
+  font-family: "Roboto", sans-serif;
+  margin-top: 10px;
+  color: #000000;
+  font-weight: 600;
+}
+.boxFooter a:hover {
+  opacity: 0.8;
+}
+
+.boxCopyright {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 0px 40px;
+}
+.boxCopyright p {
+  font-family: "Roboto", sans-serif;
+  margin-top: 20px;
+  color: #000000;
+}
+.boxCopyright hr {
+  border: none;
+  height: 1px;
+  background-color: #000000;
+}
+
+/* Pagina index */
+.tituloIndex {
+  text-align: center;
+  font-size: 40px;
+  padding: 70px;
+  font-family: "Roboto", sans-serif;
+}
+.tituloIndex h2 {
+  margin-top: 80px;
+  margin-bottom: 100px;
+  font-family: "Roboto", sans-serif;
+}
+.tituloIndex #softwaretext {
+  font-family: "Roboto", sans-serif;
+  color: chartreuse;
+}
+
+.contenedor {
+  width: 100%;
+  height: 300px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 90px;
+}
+.contenedor .tabla {
+  display: inherit;
+  flex-direction: column;
+  width: 310px;
+  height: 300px;
+  margin: 5px;
+  border: 1px solid #343759;
+  border-radius: 4px;
+  box-shadow: 0px 0px 4px 0px #343759;
+  padding: 60px;
+  text-align: center;
+  color: #000000;
+  background-color: yellow;
+}
+.contenedor .tabla h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  margin-bottom: 35px;
+}
+.contenedor .tabla p {
+  font-family: "Roboto", sans-serif;
+  display: block;
+  margin-bottom: 20px;
+}
+.contenedor .tabla img {
+  width: 64px;
+  margin-bottom: 35px;
+  margin: auto;
+}
+.contenedor .tabla .boton {
+  width: 150px;
+  padding: 12px;
+  background: #a5f059;
+  text-decoration: none;
+  color: #343759;
+  border-radius: 100px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+}
+.contenedor .tabla:hover {
+  background: #ffffff;
+  color: #000000;
+  transition: 0.5s all;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* Productos */
+.tituloProducto {
+  text-align: center;
+  font-size: 40px;
+  padding: 70px;
+  font-family: "Roboto", sans-serif;
+}
+
+.containerImagen {
+  margin-top: 30px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+.containerImagen img {
+  width: 400px;
+  padding: 30px;
+  margin: 0 auto;
+}
+.containerImagen p {
+  font-weight: 50px;
+  font-size: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.carousel-inner {
+  margin-top: 400px;
+  margin-bottom: 250px;
+}
+
+.divVideo {
+  width: 90%;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow-x: hidden;
+}
+.divVideo .containerVideo iframe {
+  width: 90%;
+  height: 400px;
+  margin: 30px;
+}
+.divVideo .containerVideoP {
+  align-content: flex-start;
+  font-weight: 100%;
+  font-size: 18px;
+  overflow-x: hidden;
+}
+
+/*Nosotros*/
+.textoNosotros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #000000;
+  margin-top: 80px;
+}
+
+.textoParrafo {
+  display: flex;
+  flex-wrap: wrap;
+  color: #000000;
+  font-weight: 20px;
+  font-size: 25px;
+  margin-top: 40px;
+  overflow: hidden;
+}
+.textoParrafo .parrafo {
+  display: inherit;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin: 10px;
+}
+
+.testimonial-card .card-up {
+  height: 120px;
+  overflow: hidden;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+.testimonial-card .avatar {
+  width: 100px;
+  margin-top: -60px;
+  overflow: hidden;
+  border: 5px solid #fff;
+  border-radius: 50%;
+}
+.testimonial-card .avatar .persona1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.aqua-gradient {
+  background: linear-gradient(40deg, #2096ff, #05ffa3) !important;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* Formulario contacto y registro*/
+.formularioRegistro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.formularioRegistro .formulario {
+  background-color: white;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  padding: 20px 40px;
+  box-shadow: 0 70px 70px rgba(0, 0, 0, 0.2);
+  font-size: 10px;
+}
+.formularioRegistro .formulario .title {
+  font-size: 2em;
+  margin-bottom: 50px;
+}
+.formularioRegistro .formulario .inputContainer {
+  position: relative;
+  width: 90%;
+  height: 45px;
+  margin-bottom: 17px;
+}
+.formularioRegistro .formulario .inputContainer .input {
+  position: absolute;
+  top: 8px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #dadce0;
+  border-radius: 7px;
+  font-size: 16px;
+  padding: 0 20px;
+  outline: none;
+  background: none;
+  z-index: 1;
+}
+.formularioRegistro .formulario .inputContainer .input::placeholder {
+  color: transparent;
+}
+.formularioRegistro .formulario .inputContainer .input:focus + .label {
+  top: -8px;
+  left: 3px;
+  z-index: 10;
+  font-weight: 20px;
+  font-size: 14px;
+  color: purple;
+}
+.formularioRegistro .formulario .inputContainer .input:focus {
+  margin-bottom: 20px;
+  border: 2px solid purple;
+}
+.formularioRegistro .formulario .inputContainer .input:not(:placeholder-shown) + .label {
+  top: -8px;
+  left: 3px;
+  z-index: 10;
+  font-weight: 20px;
+  font-size: 14px;
+}
+.formularioRegistro .formulario .inputContainer .label {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 0 4px;
+  background-color: white;
+  color: #9867c5;
+  font-size: 16px;
+  transition: 0.5s;
+  z-index: 0;
+}
+.formularioRegistro .formulario .submitBtn {
+  display: block;
+  margin-left: auto;
+  padding: 15px 30px;
+  border: none;
+  background-color: purple;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+.formularioRegistro .formulario .submitBtn:hover {
+  background-color: #9867c5;
+  transform: translateY(-2px);
+}
+
+.tarjeta {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.tarjeta .card {
+  margin-top: 80px;
+  width: 70%;
+  max-width: 300px;
+  height: auto;
+  padding: 0.8em;
+  background: #f5f5f5;
+  position: relative;
+  overflow: visible;
+  box-shadow: 0 70px 70px rgba(0, 0, 0, 0.2);
+}
+.tarjeta .card .card-img {
+  background-color: #ffcaa6;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+.tarjeta .card .card-img img {
+  width: 100%;
+  height: 100%;
+}
+.tarjeta .card .card-info {
+  padding-top: 10%;
+}
+.tarjeta .card .card-info .text-title {
+  font-weight: 900;
+  font-size: 1.2em;
+  line-height: 1.5;
+  text-align: center;
+}
+.tarjeta .card .card-info .text-body {
+  font-size: 0.9em;
+  padding-bottom: 10px;
+  height: 100px;
+}
+.tarjeta .card .card-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+}
+.tarjeta .card .card-footer .text-title {
+  font-weight: 900;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+.tarjeta .card .card-footer .card-button {
+  border: 1px solid #252525;
+  display: flex;
+  padding: 0.3em;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: 0.3s ease-in-out;
+}
+.tarjeta .card .card-footer .card-button svg {
+  width: 20px;
+  height: 20px;
+}
+.tarjeta .card .card-footer .card-button:hover {
+  border: 1px solid #ffcaa6;
+  background-color: #ffcaa6;
+}
+
+/*# sourceMappingURL=style.css.map */

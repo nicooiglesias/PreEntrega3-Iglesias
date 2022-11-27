@@ -1,0 +1,40 @@
+@use './general/variables' as head;
+
+
+  /* Navbar */
+
+  .navbar{
+    background-color: head.$color-background-navbar;
+    .container-fluid{
+    .navbar-brand{
+      color: #fff;
+    }
+      .nav-item{
+        color: white;
+        .nav-link{
+          color: white;
+          &:hover{
+            color:white;
+          }
+        }
+      }
+      .navbar-collapse{
+        flex-grow: 0;
+        .dropdown-menu{
+          background-color: head.$color-background-navbar;
+          li{
+            .dropdown-item{
+             &:hover{
+                background-color: head.$color-background-navbar;
+              }
+            } 
+            a{
+              color: #fff;
+             }
+          }
+        }
+      }
+    }
+  }
+
+  
