@@ -12,7 +12,7 @@ body {
   background: linear-gradient(to left, #4b134f, #c94b4b);
 }
 
-.containerImagen p, .divVideo .containerVideoP {
+.tarjeta .card .card-info .text-body, .containerImagen p, .divVideo .containerVideoP {
   font-family: "Roboto", sans-serif;
   color: #000000;
   margin-top: 30px;
@@ -393,7 +393,7 @@ footer {
 }
 .tarjeta .card {
   margin-top: 80px;
-  width: 70%;
+  width: 80%;
   max-width: 300px;
   height: auto;
   padding: 0.8em;
@@ -403,7 +403,6 @@ footer {
   box-shadow: 0 70px 70px rgba(0, 0, 0, 0.2);
 }
 .tarjeta .card .card-img {
-  background-color: #ffcaa6;
   margin: 0 auto;
   height: 100%;
   width: 100%;
@@ -426,6 +425,8 @@ footer {
   font-size: 0.9em;
   padding-bottom: 10px;
   height: 100px;
+  word-wrap: break-word;
+  margin-bottom: 40px;
 }
 .tarjeta .card .card-footer {
   width: 100%;
