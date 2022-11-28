@@ -1,7 +1,7 @@
 const softwaretext  = new Typed ('#softwaretext', {
 	strings: [
-		'<i class="hardware">Paginas Web</i>',
-		'<i class="software">Hardware</i>',
+		'<span class="hardware">Paginas Web</span>',
+		'<span class="software">Hardware</span>',
 	],
     typeSpeed: 75, // Velocidad en mlisegundos para poner una letra,
 	startDelay: 300, // Tiempo de retraso en iniciar la animacion. Aplica tambien cuando termina y vuelve a iniciar,
