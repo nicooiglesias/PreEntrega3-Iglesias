@@ -27,13 +27,13 @@ footer{
             h2{
                 font-family: foo.$estilo-letra; 
                 margin-bottom: 30px;
-                color: #000000;
+                color: #FFFFFF;
                 font-weight: 200px;
             }
             a{
                 font-family: foo.$estilo-letra;
                 margin-top: 10px;
-                color: #000000;
+                color: #FFFFFF;
                 font-weight: 600;
                 &:hover{
                     opacity: 0.8;
@@ -50,11 +50,11 @@ footer{
         p{
             font-family: foo.$estilo-letra;
             margin-top: 20px;
-            color: #000000;  
+            color: #FFFFFF;  
         }
             hr{
                 border: none;
                 height: 1px;
-                background-color: #000000;
+                background-color: #6A8D92;
             }
     }

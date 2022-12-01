@@ -7,14 +7,16 @@
     font-size: index.$tamanoF*2;
     padding: 70px;
     font-family: index.$estilo-letra;
+        color: #FFFFFF;
     h2{
         margin-top: index.$margen*2;
         margin-bottom: 100px;
         font-family: index.$estilo-letra;
+        color: #FFFFFF;
     }
     #softwaretext {
         font-family: index.$estilo-letra;
-        color: chartreuse;
+        color: #FFC300;
     }
 }
 
@@ -37,7 +39,7 @@
         padding: 60px;
         text-align: center;
         color: #000000;
-        background-color: yellow;
+        background-color: #FFC300;
         h2{
             font-family: index.$estilo-letra;
             font-size: 24px;
@@ -56,7 +58,7 @@
         .boton {
             width: 150px;
             padding: 12px;
-            background: #a5f059;
+            background: #D7FCD4;
             text-decoration: none;
             color: #343759;
             border-radius: 100px;
